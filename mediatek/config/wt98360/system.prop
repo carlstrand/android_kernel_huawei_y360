@@ -1,0 +1,91 @@
+#
+# system.prop for generic sdk
+#
+
+rild.libpath=/system/lib/mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+
+
+#
+wifi.tethering.interface=ap0
+#
+
+ro.opengles.version=131072
+
+wifi.direct.interface=p2p0
+dalvik.vm.heapgrowthlimit=128m
+dalvik.vm.heapsize=256m
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+# Switching Menu of Mass storage and MTP
+ro.sys.usb.storage.type=mtp,mass_storage
+
+# USB BICR function
+ro.sys.usb.bicr=yes
+
+# USB Charge only function
+ro.sys.usb.charging.only=yes
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+ro.zygote.preload.enable=0
+qemu.hw.mainkeys=1
+
+#
+# switch bluetooth stack solution
+#
+ro.btstack=blueangel
+ro.dual.sim.phone=true
+ro.config.hwtheme=2
+ro.config.app_big_icon_size=90
+
+# for huawei Europe earphone security
+ro.config.hw.security_volume=10
+ro.config.hw.security_test=68400000
+ro.config.hw.record_frequency=300000
+ro.config.hw.security_enabled=true
+# for huawei voice capture
+#ro.config.hw_optb=156
+
+ro.hwcamera.fastcapture = true
+ro.config.custhidewidget = false
+
+## for huawei launcher by guchenghong
+ro.config.match_more_card =true
+##delete huawei lockscreen cartoon
+ro.config.lockscreen_lensflare = false
+##gallery picture focal
+ro.config.hw_default_focal_len = true
+
+##dalvik.vm.jit.codecachesize=0
+
+## for huawei drm req_2459 filemanager by yubosong
+ro.huawei.cust.oma_drm=true
+ro.config.hwdrm=false
+## for huawei bug42360  gallery fengxuanyang
+ro.config.support_gallery_map=false
+#remove calendar China noli
+ro.config.remove_subscribe_menu=1
