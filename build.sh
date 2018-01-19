@@ -1,5 +1,5 @@
-toolchain=~/arm-linux-androideabi-4.7/bin
-toolchain2="arm-linux-androideabi-"
+toolchain=~/arm-cortex_a7-linux-gnueabihf-linaro_4.9/bin
+toolchain2="arm-eabi-"
 export CROSS_COMPILE=$toolchain/"$toolchain2"
 export KBUILD_BUILD_USER="chijure"
 export KBUILD_BUILD_HOST="team-Redhawk"
